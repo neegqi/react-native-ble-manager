@@ -1232,7 +1232,7 @@ class BleManager: RCTEventEmitter, CBCentralManagerDelegate, CBPeripheralDelegat
     }
     
     @objc func requestConnectionPriority(_ peripheralUUID: String,
-                                         mtu: Int,
+                                         connectionPriority: Int,
                                          callback: @escaping RCTResponseSenderBlock) {
         callback(["Not supported"])
     }
